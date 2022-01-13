@@ -36,3 +36,5 @@ RUN CHROMEDRIVER_VERSION=`curl -sS chromedriver.storage.googleapis.com/LATEST_RE
 
 # google images downloadをインストール
 RUN python -m pip install git+https://github.com/Joeclinton1/google-images-download.git
+
+COPY ./src/google_images_download.py /usr/local/lib/python3.10/site-packages/google_images_download

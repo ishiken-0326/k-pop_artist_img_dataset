@@ -7,7 +7,7 @@ services:
     working_dir: '/root/src'
     tty: true
     volumes:
-      - .:/root/src
+      - ./work:/root/src
     ports: 
       - '8081:8080'
     command : jupyter-lab --ip 0.0.0.0 --port=8080 --allow-root --no-browser --NotebookApp.token=''
