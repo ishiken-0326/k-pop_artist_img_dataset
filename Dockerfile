@@ -20,6 +20,7 @@ WORKDIR /root/src
 RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 RUN pip install -r requirements.txt
+RUN pip3 install --no-cache-dir jupyterlab
 
 # 署名を追加(chromeのインストールに必要) -> apt-getでchromeと依存ライブラリをインストール
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add \
