@@ -1,2 +1,2 @@
-/work/downloads
-/work/.ipynb_checkpoints
+*downloads/
+*.ipynb_checkpoints
